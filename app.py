@@ -41,14 +41,14 @@ def manual_testing(news):
     
     return "\n Logistic Regression  Prediction:{}  \n Decision Tree  Prediction:{}  \n RAndom Forest Classifier Prediction:{} \n ".format(output_label(predict_lr[0]), output_label(pred_dt[0]), output_label(pred_rf[0]))
 
-
-while True:
-    print("""The Menu are as following-:
+print("""The Menu are as following-:
           1. To Check News
           2. Press 0 to exit
 """)
-    choice=int(input("Enter Your Choice:"))
-    if choice==0:
+while True:
+    
+    choice=input("Enter Your Choice:")
+    if choice=='0':
         print("Thank You For Using My Service ")
         break
     else:
@@ -56,3 +56,7 @@ while True:
 
     print(manual_testing(news))
     print(50*"*")
+    print("""The Menu are as following-:
+          1. To Check News
+          2. Press 0 to exit
+""")
